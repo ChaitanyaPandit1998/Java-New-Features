@@ -19,7 +19,7 @@ public class Main {
             }));
         }
         var end = Instant.now();
-        System.out.println("Time Taken Using Virtual Thread Pools: " + Duration.between(begin,end));
+        System.out.println("Time Taken Using Virtual Threads: " + Duration.between(begin,end));
     }
 
     private static void getTotalTimeUsingCachedThreadPool(){
@@ -31,6 +31,6 @@ public class Main {
             }));
         }
         var end = Instant.now();
-        System.out.println("Time Taken Using Cached Thread Pool: " + Duration.between(begin,end));
+        System.out.println("Time Taken Using Platform Threads: " + Duration.between(begin,end));
     }
 }
