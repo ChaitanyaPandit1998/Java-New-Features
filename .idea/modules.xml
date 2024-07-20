@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Java-New-Features.iml" filepath="$PROJECT_DIR$/Java-New-Features.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaStructuredTaskScope/JavaStructuredTaskScope.iml" filepath="$PROJECT_DIR$/JavaStructuredTaskScope/JavaStructuredTaskScope.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaVirtualThreads/JavaVirtualThreads.iml" filepath="$PROJECT_DIR$/JavaVirtualThreads/JavaVirtualThreads.iml" />
     </modules>
   </component>
