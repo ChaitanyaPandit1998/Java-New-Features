@@ -6,11 +6,11 @@ import java.util.stream.IntStream;
 
 public class Main {
     public static void main(String[] args) {
-        getTotalTimeUsingVirtualThreadPool();
-        getTotalTimeUsingCachedThreadPool();
+        getTotalTimeUsingVirtualThreads();
+        getTotalTimeUsingCachedThreads();
     }
 
-    private static void getTotalTimeUsingVirtualThreadPool(){
+    private static void getTotalTimeUsingVirtualThreads(){
         var begin = Instant.now();
         try(ExecutorService executor = Executors.newVirtualThreadPerTaskExecutor()){
             IntStream.range(0,100_000).forEach(task-> executor.submit(()->{
@@ -22,7 +22,7 @@ public class Main {
         System.out.println("Time Taken Using Virtual Threads: " + Duration.between(begin,end));
     }
 
-    private static void getTotalTimeUsingCachedThreadPool(){
+    private static void getTotalTimeUsingCachedThreads(){
         var begin = Instant.now();
         try(ExecutorService executor = Executors.newCachedThreadPool()){
             IntStream.range(0,100_000).forEach(task-> executor.submit(()->{
